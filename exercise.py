@@ -28,7 +28,8 @@ class SavingsAccount(BankAccount):
 
     def add_interest(self):
         self.balance += (self.balance*self.interest_rate)
-
+    def __repr__(self):                    # ← add this
+        return f"SavingsAccount(owner='{self.owner}', balance={self.balance}, rate={self.interest_rate})"
 if __name__ == "__main__":
     user1 = SavingsAccount("Jeff", 1500, 0.05)
     print(user1)
