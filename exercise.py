@@ -47,5 +47,5 @@ if __name__ == "__main__":
 
     print(f"Your balance is: {user1.get_balance()}")
 
-# Change this line in branch-a:
-print("Hello from branch A")
+
+print("Hello from branch A and B merged")
